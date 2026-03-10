@@ -5,6 +5,16 @@ public class Unit2 {
     public static void main(String[] args) {
         // Test your methods here by calling them and printing the results
     	System.out.println("Test methods here...");
+        System.out.println(concatenateStrings("not", "here"));
+        System.out.println(calculateSquareRoot(4));
+        System.out.println(toUpperCase("hello"));
+        System.out.println(findMax(7, 9));
+        System.out.println(getStringLength("hello"));
+        System.out.println(roundValue(4.5));
+        System.out.println(getSubstring("rightleftfront", 3, 6));
+        System.out.println(getAbsoluteValue(-56));
+        System.out.println(replaceCharacter("make", 'k', 'd'));
+        System.out.println(powerOf(2.3, 4));
     }
 
     /**
@@ -15,7 +25,7 @@ public class Unit2 {
      */
     public static String concatenateStrings(String str1, String str2) {
         // TODO: Implement this method using String concatenation
-        return null;
+        return str1 + str2;
     }
 
     /**
@@ -25,7 +35,7 @@ public class Unit2 {
      */
     public static double calculateSquareRoot(double number) {
         // TODO: Implement this method using Math.sqrt
-        return 0.0;
+        return Math.sqrt(number);
     }
 
     /**
@@ -35,7 +45,7 @@ public class Unit2 {
      */
     public static String toUpperCase(String str) {
         // TODO: Implement this method using String.toUpperCase
-        return null;
+        return str.toUpperCase();
     }
 
     /**
@@ -46,7 +56,7 @@ public class Unit2 {
      */
     public static int findMax(int num1, int num2) {
         // TODO: Implement this method using Math.max
-        return 0;
+        return Math.max(num1, num2);
     }
 
     /**
@@ -56,7 +66,7 @@ public class Unit2 {
      */
     public static int getStringLength(String str) {
         // TODO: Implement this method using String.length
-        return 0;
+        return str.length();
     }
 
     /**
@@ -66,7 +76,7 @@ public class Unit2 {
      */
     public static int roundValue(double value) {
         // TODO: Implement this method using Math.round
-        return 0;
+        return (int) Math.round(value);
     }
 
     /**
@@ -78,7 +88,7 @@ public class Unit2 {
      */
     public static String getSubstring(String str, int beginIndex, int endIndex) {
         // TODO: Implement this method using String.substring
-        return null;
+        return str.substring(beginIndex, endIndex);
     }
 
     /**
@@ -88,7 +98,7 @@ public class Unit2 {
      */
     public static int getAbsoluteValue(int number) {
         // TODO: Implement this method using Math.abs
-        return 0;
+        return Math.abs(number);
     }
 
     /**
@@ -100,7 +110,7 @@ public class Unit2 {
      */
     public static String replaceCharacter(String str, char oldChar, char newChar) {
         // TODO: Implement this method using String.replace
-        return null;
+        return str.replace(oldChar, newChar);
     }
 
     /**
@@ -111,6 +121,6 @@ public class Unit2 {
      */
     public static double powerOf(double base, double exponent) {
         // TODO: Implement this method using Math.pow
-        return 0.0;
+        return Math.pow(base, exponent);
     }
 }
